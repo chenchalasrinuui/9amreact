@@ -28,3 +28,8 @@ body{
   width: 100%;
   
 }
+
+.active-menu{
+  color: red;
+  text-shadow: 2px 2px 2px white;
+}
