@@ -48,7 +48,7 @@ export const Menu = () => {
      {isMobileMenu && <button onClick={fnMobileMenuBtnClick} className='mobile-menu-btn'>menu</button>}
       
     <ul style={{left:left}} className={isMobileMenu ? 'mobile-menu' : 'menu'}>
-    <span onClick={fnClose} className='close-btn'>x</span>
+    {isMobileMenu && <span onClick={fnClose} className='close-btn'>x</span>}
       <li >
         <Link id='home' className={menuItem=='home' && 'active-menu'} onClick={fnMenuClick} href="/home">Home</Link>
       </li>
